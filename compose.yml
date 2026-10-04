@@ -2,7 +2,7 @@
 services:
   myapp:
     container_name: application-cont
-    image: maneesha3/webapp:v1
+    image: appimage
     ports:
       - "1112:8080"
     deploy:
@@ -18,7 +18,7 @@ services:
 
   devopsdb:
     container_name: devopsdb
-    image: maneesha3/dbimage:webapp
+    image: dbimage
     ports:
       - "1113:3306"
     volumes:
